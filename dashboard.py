@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 
 # Set your API Gateway GET endpoint here
-API_URL = "https://your-api-url/medicines/{owner_id}"
+API_URL = "https://4iz6qldi96.execute-api.us-east-1.amazonaws.com/inventory/DIST001"
 
 st.set_page_config(page_title="Medicine Supply Chain Dashboard", layout="wide")
 
@@ -52,3 +52,4 @@ if owner_id:
             st.error(f"Failed to fetch data: {response.status_code}")
     except Exception as e:
         st.error(f"Error: {str(e)}")
+
